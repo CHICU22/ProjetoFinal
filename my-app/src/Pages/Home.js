@@ -1,8 +1,8 @@
 import React from "react";
 import background from "../img/Background_Home.png";
-import logo from "../img/logo sem fundo.png";
+import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
-import lapki_model from "../img/LAPKI-MODEL.png";
+import altair_model from "../img/MASK-HADAR.png";
 // import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
 
 export default function Home(){
@@ -32,18 +32,21 @@ return(
             <h1 class="somemodels-title">Alguns Modelos</h1>
             <div class="somemodels-grid-container">
                 <div class="wrapper">
-                    <div>
-                        <img class="lapki-model" src={lapki_model}></img>
+                    <div class="card">
+                        <div class="hover-animation-lapki">
+                        </div>
                         <p>Lapki</p>
                         <p>42€</p>
                     </div>
-                    <div>
-                        <img class="lapki-model" src={lapki_model}></img>
+                    <div class="card">
+                        <div class="hover-animation-antares">
+                        </div>
                         <p>Antares</p>
                         <p>30€</p>
                     </div>
-                    <div>
-                        <img class="lapki-model" src={lapki_model}></img>
+                    <div class="card">
+                        <div class="hover-animation-altair">
+                        </div>
                         <p>Altair</p>
                         <p>32€</p>
                     </div>
@@ -52,6 +55,26 @@ return(
             <hr></hr>
             <h1 class="models-title">Modelos</h1>
             <p class="models-desc">Queremos sempre um biquíni único mas todos parecem sempre<br></br> um pouco “iguais”… Estes são criações 100% VIERU e o melhor é<br></br> que podes personalizar qualquer detalhe a teu gosto!</p>
+            <div class="models-grid-container">
+                <div class="rows">
+                    <div class="row-1">
+                        <img class="altair-model" src={altair_model}></img>
+                    </div>
+                    <div class="row-2">
+                        <h1>Altair</h1>
+                        <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação 
+                            da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
+                    </div>
+                    <div class="row-3">
+                        <h1>Altair</h1>
+                        <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação 
+                            da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
+                    </div>
+                    <div class="row-4">
+                        <img class="altair-model" src={altair_model}></img>
+                    </div>
+                </div>
+            </div>
         </body>
     </section>
     <section>
