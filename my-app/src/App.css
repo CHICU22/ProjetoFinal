@@ -1,24 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto+Slab&display=swap');
 
 :root{
   --text-font: 'Montserrat', sans-serif;
   --title-font: 'Roboto Slab', serif;
-
 }
 
-*{
+*, html, body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--text-font);
+}
+
+#root{
+  display: grid;
+  grid-template-rows: auto auto 300px;
+  grid-template-columns: 100vw;
+} 
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDDCEC;
+}
+
+header> a{
+  font-family: var(--title-font);
+  font-size: 18px;
+  padding: 80px;
+}
+
+header> .search-icon{
+  width: 1.5vw;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container{
+  background-image: url("../src/img/Background_Home.png");
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.main-container>button{
+  margin-bottom: 20px;
+  font-family: var(--text-font);
+  font-size: 20px;
+  color: white;
+  width: 9vmax;
+  height: 2vmax;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.main-container>button:hover{
+  cursor: pointer;
+  background-color: rgba(194, 194, 194, 0.4);
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature>h3{
+  font-family: var(--title-font);
+  font-size: 30px;
+  margin-top: 80px;
+}
+
+.feature>.cardlist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 110px;
+  margin-top: 140px;
+}
+
+.card{
+  margin-bottom: 100px;
+}
+
+.card>.bikini-name{
+  font-weight: 900;
+}
+
+
+
+.hover-animation-lapki{
+  width: 307px;
+  height: 460px;
+  background-image: url(../src/img/LAPKI-MODEL.png);
+  background-size: cover;
+}
+
+.hover-animation-lapki:hover{
+  background-image: url(../src/img/LAPKI-MODEL2.png);
+  cursor: pointer;
+}
+
+.hover-animation-antares{
+  width: 307px;
+  height: 460px;
+  background-image: url(../src/img/ANTARES-MODEL.png);
+  background-size: cover;
+}
+
+.hover-animation-antares:hover{
+  background-image: url(../src/img/ANTARES-MODEL2.png);
+  cursor: pointer;
+}
+
+.hover-animation-altair{
+  width: 307px;
+  height: 460px;
+  background-image: url(../src/img/ALTAIR-MODEL.png);
+  background-size: cover;
+}
+
+.hover-animation-altair:hover{
+  background-image: url(../src/img/ALTAIR-MODEL2.png);
+  cursor: pointer;
+}
+/* *{
   margin: 0;
 }
 
 hr{
   border: 1px solid grey;
   opacity: 30%;
-}
+} */
 
 /*-----HEADER-----*/
 
-.header-container{
+/* .header-container{
   display: flex;
   background-color: #FDDCEC;
   justify-content: center;
@@ -37,12 +161,12 @@ hr{
 
 .search-icon{
   width: 1.4vmax;
-}
+} */
 
 /*-----HEADER-----*/
 
 /*-----MAIN IMAGE-----*/
-.main-container{
+/* .main-container{
   position: relative;
 }
 
@@ -53,7 +177,7 @@ hr{
 .centered{
   position: absolute;
   top: 88%;
-  left: 46%;
+  left: 50%;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -72,12 +196,12 @@ hr{
 .centered>button:hover{
   cursor: pointer;
   background-color: rgba(194, 194, 194, 0.4);
-}
+} */
 
 /*-----MAIN IMAGE-----*/
 
 /*-----SOME MODELS-----*/
-.somemodels-title{
+/* .somemodels-title{
   margin-top: 80px;
   text-align: center;
   font-family: var(--title-font); 
@@ -131,10 +255,10 @@ hr{
 .hover-animation-altair:hover{
   background-image: url(../src/img/ALTAIR-MODEL2.png);
   cursor: pointer;
-}
+} */
 /*-----SOME MODELS-----*/
 
-.models-title{
+/* .models-title{
   text-align: center;
   margin-top: 80px;
 }
@@ -156,6 +280,5 @@ hr{
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   gap: 110px;
-} 
-
+}  */
 
