@@ -18,6 +18,13 @@
   display: grid;
   grid-template-rows: auto auto 300px;
   grid-template-columns: 100vw;
+}
+
+hr{
+  border: 1px solid grey;
+  opacity: 30%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 } 
 
 header{
@@ -86,15 +93,9 @@ main{
   margin-top: 140px;
 }
 
-.card{
-  margin-bottom: 100px;
-}
-
 .card>.bikini-name{
   font-weight: 900;
 }
-
-
 
 .hover-animation-lapki{
   width: 307px;
@@ -130,6 +131,88 @@ main{
 .hover-animation-altair:hover{
   background-image: url(../src/img/ALTAIR-MODEL2.png);
   cursor: pointer;
+}
+
+.models-feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.models-feature>.models-desc{
+  text-align: center;
+}
+
+.models-grid-container{
+  display: grid;
+  grid-template-columns: 0.6fr 0.6fr;
+  margin-top: 140px;
+}
+
+.models-grid-container>.row-2-desc, .row-3-desc, .row-6-desc{ 
+  align-self: center;
+}
+
+.row-3-desc, .row-6-desc, .row-4-image, .row-5-image{
+  margin-top: 80px;
+}
+
+.row-2-desc>p, .row-3-desc>p, .row-6-desc>p{ 
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.row-2-desc>button, .row-3-desc>button, .row-6-desc>button{ 
+  font-family: var(--text-font);
+  font-size: 18px;
+  color: white;
+  width: 13vmax;
+  height: 2.6vmax;
+  border: none;
+  background-color: black;
+}
+
+.row-2-desc>button:hover, .row-3-desc>button:hover, .row-6-desc>button:hover{ 
+  cursor: pointer;
+  border: solid;
+  border-color: black;
+  color: black;
+  background-color: white;
+}
+
+.patterns-feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.patterns-grid-container{
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+  width:321px;
+  justify-content: space-between;
+}
+
+.pattern-card{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: stretch;
+  width: 321px;
+  justify-content: space-between;
+}
+
+.patterns-grid-container> .pattern-card> .mumu-pattern{
+  background-image: url(../src/img/Mumu.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.patterns-grid-container> .pattern-card> .mumu-pattern>p{
+  align-self: center;
 }
 /* *{
   margin: 0;

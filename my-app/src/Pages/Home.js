@@ -45,27 +45,62 @@ export default function Home() {
                     </section>
                 </div>
                 <hr></hr>
-                <h1 class="models-title">Modelos</h1>
-                <p class="models-desc">Queremos sempre um biquíni único mas todos parecem sempre<br></br> um pouco “iguais”… Estes são criações 100% VIERU e o melhor é<br></br> que podes personalizar qualquer detalhe a teu gosto!</p>
-                <div class="models-grid-container">
-                    <div class="rows">
-                        <div class="row-1">
-                            <img class="altair-model" src={altair_model}></img>
+                <div class="models-feature">
+                    <h1 class="models-title">Modelos</h1>
+                    <p class="models-desc">Queremos sempre um biquíni único mas todos parecem sempre<br></br> um pouco “iguais”… Estes são criações 100% VIERU e o melhor é<br></br> que podes personalizar qualquer detalhe a teu gosto!</p>
+                    <section class="models-grid-container">
+                            <div class="row-1-image">
+                                <img class="altair-model" src={altair_model}></img>
+                            </div>
+                            <div class="row-2-desc">
+                                <h1>Altair</h1>
+                                <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação
+                                da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
+                                <button type="submit">Personalizar</button>
+                            </div>
+                            <div class="row-3-desc">
+                                <h1>Hadar</h1>
+                                <p>Hadar é designada por Beta Centauri, que significa que<br></br> é a segunda estrela mais brilhante da constelação de<br></br> Centaruro.
+                                <br></br>Hadar é uma estrela múltipla constituída por 3 elementos.</p>
+                                <button type="submit">Personalizar</button>
+                            </div>
+                            <div class="row-4-image">
+                                <img class="altair-model" src={altair_model}></img>
+                            </div>
+                            <div class="row-5-image">
+                                <img class="altair-model" src={altair_model}></img>
+                            </div>
+                            <div class="row-6-desc">
+                                <h1>Lapki</h1>
+                                <p>Lapki é a alcunha de criança do meu pai.
+                                <br></br>É umas das estrelas da minha vida.
+                                <br></br>Lapki é símbolo de bondade e humildade.
+                                <br></br>Ensina a ajudar o próximo.</p>
+                                <button type="submit">Personalizar</button>
+                            </div>
+                    </section>
+                </div>
+                <hr></hr>
+                <div class="patterns-feature">
+                    <h1>Padrões</h1>
+                    <p>Padrões únicos criados do 0 para combinar com as maiores
+                    <br></br>Tendências deste verão!
+                    <br></br>Personaliza o teu modelo favorito com o padrão que mais
+                    <br></br>Combina contigo.</p>
+                    <section class="patterns-grid-container">
+                        <div class="pattern-card">
+                            <div class="mumu-pattern"></div>
+                            <p>MUMU</p>
                         </div>
-                        <div class="row-2">
-                            <h1>Altair</h1>
-                            <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação
-                            da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
+                        <div class="pattern-card">
+                            <div class="nina-pattern"></div>
+                            <p>NINA</p>
                         </div>
-                        <div class="row-3">
-                            <h1>Altair</h1>
-                            <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação
-                            da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
+                        <div class="pattern-card">
+                            <div class="milkshake-pattern"></div>
+                            <p>MILKSHAKE</p>
                         </div>
-                        <div class="row-4">
-                            <img class="altair-model" src={altair_model}></img>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </main>
             <footer>
