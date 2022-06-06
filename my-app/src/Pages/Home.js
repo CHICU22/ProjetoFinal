@@ -101,10 +101,20 @@ export default function Home() {
                             <p>MILKSHAKE</p>
                         </div>
                     </section>
+                    <button type="submit">Ver Mais</button>
                 </div>
             </main>
             <footer>
-                <div class="socials-container"></div>
+                <img class="logo-footer" src={logo} href="home.js"></img>
+                <div class="pages-ref">
+                    <a>Size Guide</a>
+                    <a>Returns</a>
+                    <a>About</a>
+                </div>
+                <div class="socials-container">
+                    
+                </div>
+                <p>© 2021 Vieru Swimwear</p>
             </footer>
         </>
     );
