@@ -204,7 +204,7 @@ main{
   justify-content: space-between;
 }
 
-.patterns-grid-container> .pattern-card> .mumu-pattern{
+.mumu-pattern{
   background-image: url(../src/img/Mumu.png);
   background-size: cover;
   height: 100%;
@@ -244,7 +244,7 @@ footer{
 }
 
 .pages-ref{
-  margin-left: 150px;
+  margin-left: 160px;
   margin-bottom: 120px;
 }
 
