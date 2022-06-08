@@ -3,6 +3,7 @@ import background from "../img/Background_Home.png";
 import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
 import altair_model from "../img/MASK-HADAR.png";
+import {Link} from "react-router-dom";
 // import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
 
 export default function Home() {
@@ -10,9 +11,9 @@ export default function Home() {
         <>
             <header>
                 <a>Loja</a>
-                <a>Size Guide</a>
-                <img class="logo" src={logo} href="home.js"></img>
-                <a>Returns</a>
+                <Link to="/sizeguide">Size Guide</Link>
+                <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
+                <Link to="/returns">Returns</Link>
                 <a>About</a>
                 <img class="search-icon" src={search_icon}></img>
                 {/* <img class="cart-icon" src={cart_icon}></img> */}
@@ -105,10 +106,10 @@ export default function Home() {
                 </div>
             </main>
             <footer>
-                <img class="logo-footer" src={logo} href="home.js"></img>
+                <Link to="/"><img class="logo-footer" src={logo}></img></Link>
                 <div class="pages-ref">
-                    <a>Size Guide</a>
-                    <a>Returns</a>
+                    <Link to="/sizeguide">Size Guide</Link>
+                    <Link to="/returns">Returns</Link>
                     <a>About</a>
                 </div>
                 <div class="socials-container">
