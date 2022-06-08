@@ -14,6 +14,8 @@
   font-family: var(--text-font);
 }
 
+/*---------HOME PAGE----------*/
+
 #root{
   display: grid;
   grid-template-rows: auto auto 220px;
@@ -251,154 +253,49 @@ footer{
 .pages-ref>a{
   padding: 40px;
 }
-/* *{
-  margin: 0;
-}
 
-hr{
-  border: 1px solid grey;
-  opacity: 30%;
-} */
-
-/*-----HEADER-----*/
-
-/* .header-container{
+/*---------SIZEGUIDE PAGE----------*/
+.sizeguide-container{
   display: flex;
-  background-color: #FDDCEC;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.header-container>a{
+.sizeguide-container>h1{
+  margin-top: 120px;
+}
+
+.size-img{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 428px;
+  height: 503px;
+  background-image: url(../src/img/size-guide.jpg);
+}
+
+/*---------RETURNS PAGE----------*/
+.returns-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 110px;
+}
+
+.trocas-img{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  width: 302px;
+  height: 302px;
+  background-image: url(../src/img/Layer-2.png);
+}
+
+.text-container>h1{
   font-family: var(--title-font);
-  font-size: 20px;
-  padding: 80px;
 }
 
-.logo{
-  width: 8vmax;
-}
-
-.search-icon{
-  width: 1.4vmax;
-} */
-
-/*-----HEADER-----*/
-
-/*-----MAIN IMAGE-----*/
-/* .main-container{
-  position: relative;
-}
-
-.main-container>img{
-  width: auto;
-}
-
-.centered{
-  position: absolute;
-  top: 88%;
-  left: 50%;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.centered>button{
-  font-family: var(--text-font);
-  font-size: 20px;
-  color: white;
-  width: 9vmax;
-  height: 2vmax;
-  border: none;
-  background-color: rgb(255, 255, 255, 0.4);
-}
-
-.centered>button:hover{
-  cursor: pointer;
-  background-color: rgba(194, 194, 194, 0.4);
-} */
-
-/*-----MAIN IMAGE-----*/
-
-/*-----SOME MODELS-----*/
-/* .somemodels-title{
-  margin-top: 80px;
-  text-align: center;
-  font-family: var(--title-font); 
-}
-
-.somemodels-grid-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
-
-.wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 110px;
-}
-
-.hover-animation-lapki{
-  width: 307px;
-  height: 460px;
-  background-image: url(../src/img/LAPKI-MODEL.png);
-  background-size: cover;
-}
-
-.hover-animation-lapki:hover{
-  background-image: url(../src/img/LAPKI-MODEL2.png);
-  cursor: pointer;
-}
-
-.hover-animation-antares{
-  width: 307px;
-  height: 460px;
-  background-image: url(../src/img/ANTARES-MODEL.png);
-  background-size: cover;
-}
-
-.hover-animation-antares:hover{
-  background-image: url(../src/img/ANTARES-MODEL2.png);
-  cursor: pointer;
-}
-
-.hover-animation-altair{
-  width: 307px;
-  height: 460px;
-  background-image: url(../src/img/ALTAIR-MODEL.png);
-  background-size: cover;
-}
-
-.hover-animation-altair:hover{
-  background-image: url(../src/img/ALTAIR-MODEL2.png);
-  cursor: pointer;
-} */
-/*-----SOME MODELS-----*/
-
-/* .models-title{
-  text-align: center;
-  margin-top: 80px;
-}
-
-.models-desc{
+.text-container>p{
   margin-top: 10px;
-  text-align: center;
 }
-
-.models-grid-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 120px;
-  margin-bottom: 80px;
-}
-
-.rows{
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  gap: 110px;
-}  */
 
