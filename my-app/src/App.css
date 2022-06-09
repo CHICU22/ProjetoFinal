@@ -299,3 +299,23 @@ footer{
   margin-top: 10px;
 }
 
+/*---------SOBRE NOS PAGE---------*/
+.sobrenos-container{
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  align-items: center;
+}
+
+.row-2-desc-sobrenos{
+  width: 885px;
+  height: 518px;
+  background-color: #FBE3DA;
+}
+
+.row-3-desc-sobrenos{
+  width: 885px;
+  height: 518px;
+  background-color: #FBE3DA;
+}

@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router-dom";
 import Home from "./Pages/Home";
 import SizeGuide from "./Pages/SizeGuide"
 import Returns from "./Pages/TrocasDevolucoes"
+import SobreNos from "./Pages/SobreNos"
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <Route path="/sizeguide" element={<SizeGuide />}>
       </Route>
       <Route path="/returns" element={<Returns />}>
+      </Route>
+      <Route path="/sobrenos" element={<SobreNos />}>
       </Route>
     </Routes>
   );
