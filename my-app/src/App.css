@@ -40,6 +40,12 @@ header> a{
   font-family: var(--title-font);
   font-size: 18px;
   padding: 80px;
+  text-decoration: none;
+  color: black;
+}
+
+header> a:hover{
+  color: #6F6F6F
 }
 
 header> .search-icon{
@@ -187,13 +193,17 @@ main{
   flex-direction: column;
   align-items: center;
   margin-bottom: 110px;
+  gap: 25px;
+}
+
+.patterns-feature>p{
+  text-align: center;
 }
 
 .patterns-grid-container{
   display: flex;
-  gap: 60px;
+  gap: 90px;
   align-items: stretch;
-  width:321px;
   justify-content: space-between;
 }
 
@@ -201,15 +211,29 @@ main{
   display: flex;
   flex-direction: column;
   gap: 60px;
-  align-items: stretch;
-  width: 321px;
+  align-items: center;
   justify-content: space-between;
 }
 
 .mumu-pattern{
   background-image: url(../src/img/Mumu.png);
   background-size: cover;
-  height: 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.nina-pattern{
+  background-image: url(../src/img/Nina.png);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.milkshake-pattern{
+  background-image: url(../src/img/Milkshake.png);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
 }
 
 .patterns-grid-container> .pattern-card> .mumu-pattern>p{
@@ -224,7 +248,7 @@ main{
   height: 2.6vmax;
   border: none;
   background-color: black;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .patterns-feature>button:hover{
@@ -235,24 +259,38 @@ main{
   background-color: white;
 }
 
+/*--------FOOTER--------*/
 footer{
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #F9D0C1;
 }
 
-.logo-footer{
-  margin-left: 18%;
-}
-
-.pages-ref{
-  margin-left: 160px;
-  margin-bottom: 120px;
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .pages-ref>a{
   padding: 40px;
+  text-decoration: none;
+  color: black;
 }
+
+.pages-ref>a:hover{
+  color: #6F6F6F;
+}
+
+.socials-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socials-container>p{
+  font-size: 12px;
+}
+
 
 /*---------SIZEGUIDE PAGE----------*/
 .sizeguide-container{
@@ -300,22 +338,48 @@ footer{
 }
 
 /*---------SOBRE NOS PAGE---------*/
+.sobre-title{
+  margin-top: 40px;
+  font-family: var(--title-font);
+  align-self: center;
+}
+
 .sobrenos-container{
   display: grid;
   grid-template-columns: 0fr 0fr;
-  margin-top: 120px;
+  gap: 20px;
+  margin-top: 60px;
   margin-bottom: 120px;
   align-items: center;
+  justify-content: center;
 }
 
 .row-2-desc-sobrenos{
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
   width: 885px;
   height: 518px;
   background-color: #FBE3DA;
 }
 
+.row-2-desc-sobrenos>p, h1{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .row-3-desc-sobrenos{
-  width: 885px;
-  height: 518px;
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  width: 776px;
+  height: 591px;
   background-color: #FBE3DA;
+}
+
+.row-3-desc-sobrenos>p, h1{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
