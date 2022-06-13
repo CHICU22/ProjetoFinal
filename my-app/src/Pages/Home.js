@@ -2,6 +2,9 @@ import React from "react";
 import background from "../img/Background_Home.png";
 import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
+import insta_icon from "../img/icons/icons8-instagram.png"
+import facebook_icon from "../img/icons/icons8-facebook.png"
+import tiktok_icon from "../img/icons/icons8-tiktok.png"
 import altair_model from "../img/MASK-HADAR.png";
 import {Link} from "react-router-dom";
 // import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
@@ -10,7 +13,7 @@ export default function Home() {
     return (
         <>
             <header>
-                <a>Loja</a>
+                <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/returns">Returns</Link>
@@ -102,20 +105,24 @@ export default function Home() {
                             <p>MILKSHAKE</p>
                         </div>
                     </section>
-                    <button type="submit">Ver Mais</button>
+                    <button type="submit">Personalizar</button>
                 </div>
             </main>
             <footer>
-                <Link to="/"><img class="logo-footer" src={logo}></img></Link>
-                <div class="pages-ref">
-                    <Link to="/sizeguide">Size Guide</Link>
-                    <Link to="/returns">Returns</Link>
-                    <Link to="/sobrenos">Sobre Nós</Link>
-                </div>
-                <div class="socials-container">
-                    
-                </div>
-                <p>© 2021 Vieru Swimwear</p>
+                <section class="footer-container">    
+                        <Link to="/"><img class="logo-footer" src={logo}></img></Link>
+                        <div class="pages-ref">
+                            <Link to="/sizeguide">Size Guide</Link>
+                            <Link to="/returns">Returns</Link>
+                            <Link to="/sobrenos">Sobre Nós</Link>
+                        <div class="socials-container">
+                            <img class="insta-icon" src={insta_icon}></img>
+                            <img class="facebook-icon" src={facebook_icon}></img>
+                            <img class="tiktok-icon" src={tiktok_icon}></img>
+                            <p>© 2021 Vieru Swimwear</p>
+                        </div>
+                        </div>  
+                </section>
             </footer>
         </>
     );
