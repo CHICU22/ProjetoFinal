@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <header>
-                <a>Loja</a>
+                <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/returns">Returns</Link>
@@ -20,6 +20,7 @@ export default function Home() {
                 {/* <img class="cart-icon" src={cart_icon}></img> */}
             </header>
             <main>
+            <h1 class="sobre-title">Sobre Nós</h1>
                 <section class="sobrenos-container">
                             <div class="row-1-image-sobrenos">
                                 <img class="foto1" src={foto1}></img>
