@@ -14,7 +14,7 @@ export default function Home() {
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/returns">Returns</Link>
-                <a>About</a>
+                <Link to="/sobrenos">Sobre Nós</Link>
                 <img class="search-icon" src={search_icon}></img>
                 {/* <img class="cart-icon" src={cart_icon}></img> */}
             </header>
@@ -29,7 +29,7 @@ export default function Home() {
                 <div class="pages-ref">
                     <Link to="/sizeguide">Size Guide</Link>
                     <Link to="/returns">Returns</Link>
-                    <a>About</a>
+                    <Link to="/sobrenos">Sobre Nós</Link>
                 </div>
                 <div class="socials-container">
                     
