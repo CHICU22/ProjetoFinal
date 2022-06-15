@@ -31,19 +31,19 @@ export default function Home() {
                     <div class="card">  
                             <div class="hover-animation-lapki">
                             </div>
-                            <p class="bikini-name">Lapki</p>
+                            <a class="bikini-name">Lapki</a>
                             <p>42€</p>
                         </div>
                         <div class="card">
                             <div class="hover-animation-antares">
                             </div>
-                            <p class="bikini-name">Antares</p>
+                            <a class="bikini-name">Antares</a>
                             <p>30€</p>
                         </div>
                         <div class="card">
                             <div class="hover-animation-altair">
                             </div>
-                            <p class="bikini-name">Altair</p>
+                            <a class="bikini-name">Altair</a>
                             <p>32€</p>
                         </div>
                     </section>
@@ -105,7 +105,6 @@ export default function Home() {
                             <p>MILKSHAKE</p>
                         </div>
                     </section>
-                    <button type="submit">Personalizar</button>
                 </div>
             </main>
             <footer>
