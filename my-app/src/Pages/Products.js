@@ -2,7 +2,7 @@ import React from "react";
 import background from "../img/Background_Home.png";
 import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
-import altair_model from "../img/MASK-HADAR.png";
+import container_bikini from "../img/Retângulo 116.png";
 import {Link} from "react-router-dom";
 // import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
 
@@ -19,7 +19,75 @@ export default function Home() {
                 {/* <img class="cart-icon" src={cart_icon}></img> */}
             </header>
             <main>
-                  
+                <div class="products-container">
+                    <ul>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                        <li>
+                            <img class="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                        </li>
+                    </ul>
+                </div>
             </main>
             <footer>
                 <Link to="/"><img class="logo-footer" src={logo}></img></Link>
