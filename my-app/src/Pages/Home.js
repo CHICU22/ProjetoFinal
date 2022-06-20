@@ -7,7 +7,7 @@ import facebook_icon from "../img/icons/icons8-facebook.png"
 import tiktok_icon from "../img/icons/icons8-tiktok.png"
 import altair_model from "../img/MASK-HADAR.png";
 import {Link} from "react-router-dom";
-// import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
+import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
 
 export default function Home() {
     return (
@@ -15,15 +15,15 @@ export default function Home() {
             <header>
                 <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
-                <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/returns">Returns</Link>
+                <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/sobrenos">Sobre Nós</Link>
-                <img class="search-icon" src={search_icon}></img>
-                {/* <img class="cart-icon" src={cart_icon}></img> */}
+                <img class="search-icon" src={search_icon} />
+                <Link to="/checkout"><img class="cart-icon" src={cart_icon}></img></Link>
             </header>
             <main>
                 <div class="main-container">
-                    <button type="submit">SHOP NOW</button>
+                <Link to="/loja"><button class="shopnow-btn" type="submit">SHOP NOW</button></Link>
                 </div>
                 <div class="feature">
                     <h3>Alguns Modelos</h3>
@@ -60,13 +60,13 @@ export default function Home() {
                                 <h1>Altair</h1>
                                 <p>Altair é um nome de origem árabe que significa<br></br> “aquele que voa”. Altair é a estrela mais brilhante da constelação
                                 da Águia. Altair é a 12ª estrela mais brilhante no céu Noturno.</p>
-                                <button type="submit">Personalizar</button>
+                                <Link to="/loja"><button class="personalizar-btn" type="submit">Personalizar</button></Link>
                             </div>
                             <div class="row-3-desc">
                                 <h1>Hadar</h1>
                                 <p>Hadar é designada por Beta Centauri, que significa que<br></br> é a segunda estrela mais brilhante da constelação de<br></br> Centaruro.
                                 <br></br>Hadar é uma estrela múltipla constituída por 3 elementos.</p>
-                                <button type="submit">Personalizar</button>
+                                <Link to="/loja"><button class="personalizar-btn" type="submit">Personalizar</button></Link>
                             </div>
                             <div class="row-4-image">
                                 <img class="altair-model" src={altair_model}></img>
@@ -80,13 +80,13 @@ export default function Home() {
                                 <br></br>É umas das estrelas da minha vida.
                                 <br></br>Lapki é símbolo de bondade e humildade.
                                 <br></br>Ensina a ajudar o próximo.</p>
-                                <button type="submit">Personalizar</button>
+                                <Link to="/loja"><button class="personalizar-btn" type="submit">Personalizar</button></Link>
                             </div>
                     </section>
                 </div>
                 <hr></hr>
                 <div class="patterns-feature">
-                    <h1>Padrões</h1>
+                    <h1>Alguns Padrões</h1>
                     <p>Padrões únicos criados do 0 para combinar com as maiores
                     <br></br>Tendências deste verão!
                     <br></br>Personaliza o teu modelo favorito com o padrão que mais
