@@ -6,6 +6,7 @@ import SizeGuide from "./Pages/SizeGuide"
 import Returns from "./Pages/TrocasDevolucoes"
 import SobreNos from "./Pages/SobreNos"
 import Loja from "./Pages/Products";
+import Checkout from "./Pages/Checkout";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Route path="/sobrenos" element={<SobreNos />}>
       </Route>
       <Route path="/loja" element={<Loja />}>
+      </Route>
+      <Route path="/checkout" element={<Checkout />}>
       </Route>
     </Routes>
   );
