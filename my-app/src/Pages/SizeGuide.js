@@ -13,25 +13,25 @@ export default function Home() {
                 <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/returns">Returns</Link>
-                <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
+                <Link to="/"><img className="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/sobrenos">Sobre Nós</Link>
-                <img class="search-icon" src={search_icon}></img>
-                <img class="cart-icon" src={cart_icon}></img>
+                <img className="search-icon" src={search_icon}></img>
+                <img className="cart-icon" src={cart_icon}></img>
             </header>
             <main>
-                <div class="sizeguide-container">
+                <div className="sizeguide-container">
                     <h1>Size Guide</h1>
-                    <div class="size-img"></div>                   
+                    <div className="size-img"></div>                   
                 </div>
             </main>
             <footer>
-                <Link to="/"><img class="logo-footer" src={logo}></img></Link>
-                <div class="pages-ref">
+                <Link to="/"><img className="logo-footer" src={logo}></img></Link>
+                <div className="pages-ref">
                     <Link to="/sizeguide">Size Guide</Link>
                     <Link to="/returns">Returns</Link>
                     <Link to="/sobrenos">Sobre Nós</Link>
                 </div>
-                <div class="socials-container">
+                <div className="socials-container">
                     
                 </div>
                 <p>© 2021 Vieru Swimwear</p>

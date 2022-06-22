@@ -1,9 +1,9 @@
 import React from "react";
-import background from "../img/Background_Home.png";
+import {data, patterns} from "../Components/Products-Comp";
 import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
 import container_bikini from "../img/Retângulo 116.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import cart_icon from "../img/icons/icons8-shopping-bag-64.png"
 
 export default function Home() {
@@ -13,250 +13,246 @@ export default function Home() {
                 <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/returns">Returns</Link>
-                <Link to="/"><img class="logo" src={logo} href="home.js"></img></Link>
+                <Link to="/"><img className="logo" src={logo} href="home.js"></img></Link>
                 <Link to="/sobrenos">Sobre Nós</Link>
-                <img class="search-icon" src={search_icon}></img>
-                <img class="cart-icon" src={cart_icon}></img>
+                <img className="search-icon" src={search_icon}></img>
+                <img className="cart-icon" src={cart_icon}></img>
             </header>
             <main>
-                <h1 class="products-title">Escolha o seu modelo</h1>
-                <div class="products-container">
+                <h1 className="products-title">Escolha o seu modelo</h1>
+                <div className="products-container">
                     <ul>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="biki-img-container" src={container_bikini}></img>
-                            <h3>Product Name</h3>
-                            <p>10.00€</p>
-                            <div class="choose-pattern">
-                                <div class="fierce-pattern-products"></div>
-                                <div class="nina-pattern-products"></div>
-                                <div class="fly-high-pattern-products"></div>
-                                <div class="meadow-pattern-products"></div>
-                                <div class="wild-sky-pattern-products"></div>
-                                <div class="mumu-pattern-products"></div>
-                                <div class="milkshake-pattern-products"></div>
-                                <div class="deep-ocean-pattern-products"></div>
-                                <div class="dark-sunset-pattern-products"></div>
-                                <div class="sweat-peach-pattern-products"></div>
-                            </div>
-                        </li>
-                        <div class="last-product-center">
-                            <li>
-                                <img class="biki-img-container" src={container_bikini}></img>
-                                <h3>Product Name</h3>
-                                <p>10.00€</p>
-                                <div class="choose-pattern">
-                                    <div class="fierce-pattern-products"></div>
-                                    <div class="nina-pattern-products"></div>
-                                    <div class="fly-high-pattern-products"></div>
-                                    <div class="meadow-pattern-products"></div>
-                                    <div class="wild-sky-pattern-products"></div>
-                                    <div class="mumu-pattern-products"></div>
-                                    <div class="milkshake-pattern-products"></div>
-                                    <div class="deep-ocean-pattern-products"></div>
-                                    <div class="dark-sunset-pattern-products"></div>
-                                    <div class="sweat-peach-pattern-products"></div>
+                        {data.map((element) => {
+                            
+                            return <li>
+                                <img className="biki-img-container" src={container_bikini}></img>
+                                <h3>{element.name}</h3>
+                                <p>{element.price}</p>
+                                <div className="choose-pattern">
+                                    {patterns.map((pattern) =>{
+                                        return <div className={pattern}></div>
+                                    })}
                                 </div>
                             </li>
-                        </div>
+                        })}
+                        {/* <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img className="biki-img-container" src={container_bikini}></img>
+                            <h3>Product Name</h3>
+                            <p>10.00€</p>
+                            <div className="choose-pattern">
+                                <div className="fierce-pattern-products"></div>
+                                <div className="nina-pattern-products"></div>
+                                <div className="fly-high-pattern-products"></div>
+                                <div className="meadow-pattern-products"></div>
+                                <div className="wild-sky-pattern-products"></div>
+                                <div className="mumu-pattern-products"></div>
+                                <div className="milkshake-pattern-products"></div>
+                                <div className="deep-ocean-pattern-products"></div>
+                                <div className="dark-sunset-pattern-products"></div>
+                                <div className="sweat-peach-pattern-products"></div>
+                            </div>
+                        </li>
+                        <div className="last-product-center">
+                            <li>
+                                <img className="biki-img-container" src={container_bikini}></img>
+                                <h3>Product Name</h3>
+                                <p>10.00€</p>
+                                <div className="choose-pattern">
+                                    <div className="fierce-pattern-products"></div>
+                                    <div className="nina-pattern-products"></div>
+                                    <div className="fly-high-pattern-products"></div>
+                                    <div className="meadow-pattern-products"></div>
+                                    <div className="wild-sky-pattern-products"></div>
+                                    <div className="mumu-pattern-products"></div>
+                                    <div className="milkshake-pattern-products"></div>
+                                    <div className="deep-ocean-pattern-products"></div>
+                                    <div className="dark-sunset-pattern-products"></div>
+                                    <div className="sweat-peach-pattern-products"></div>
+                                </div>
+                            </li> */}
+                        {/* </div> */}
                     </ul>
                 </div>
             </main>
             <footer>
-                <Link to="/"><img class="logo-footer" src={logo}></img></Link>
-                <div class="pages-ref">
+                <Link to="/"><img className="logo-footer" src={logo}></img></Link>
+                <div className="pages-ref">
                     <Link to="/sizeguide">Size Guide</Link>
                     <Link to="/returns">Returns</Link>
                     <Link to="/sobrenos">Sobre Nós</Link>
                 </div>
-                <div class="socials-container">
-                    
+                <div className="socials-container">
+
                 </div>
                 <p>© 2021 Vieru Swimwear</p>
             </footer>

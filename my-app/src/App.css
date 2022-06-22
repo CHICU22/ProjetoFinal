@@ -46,7 +46,8 @@ header> a{
 }
 
 header> a:hover{
-  color: #6F6F6F
+  color: #5c5c5c;
+  text-decoration: underline;
 }
 
 .search-icon{
@@ -80,7 +81,9 @@ main{
 
 .shopnow-btn:hover{
   cursor: pointer;
-  background-color: rgba(194, 194, 194, 0.4);
+  background-color: rgba(194, 194, 194, 0.529);
+  border: solid;
+  border-color: white;
 }
 
 .feature{
@@ -102,8 +105,18 @@ main{
   margin-top: 140px;
 }
 
-.card>.bikini-name{
+.card>p{
+  margin-top: 2px;
+}
+
+.card>a{
+  margin-top: 8px;
   font-weight: 900;
+}
+
+.card>a:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .hover-animation-lapki{
