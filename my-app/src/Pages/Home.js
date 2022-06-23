@@ -23,7 +23,7 @@ export default function Home() {
             </header>
             <main>
                 <div className="main-container">
-                <Link to="/loja"><button className="shopnow-btn" type="submit">SHOP NOW</button></Link>
+                <Link to="/loja"><button className="shopnow-btn" type="submit">COMPRAR AGORA</button></Link>
                 </div>
                 <div className="feature">
                     <h3>Alguns Modelos</h3>
@@ -31,20 +31,23 @@ export default function Home() {
                     <div className="card">  
                             <div className="hover-animation-lapki">
                             </div>
-                            <Link to="/loja"><a>Lapki</a></Link>
+                            <a>Lapki</a>
                             <p>42€</p>
+                            <Link to="/loja"><button className="buy-btn" type="submit">COMPRAR</button></Link>
                         </div>
                         <div className="card">
                             <div className="hover-animation-antares">
                             </div>
-                            <Link to="/loja"><a>Antares</a></Link>
+                            <a>Antares</a>
                             <p>30€</p>
+                            <Link to="/loja"><button className="buy-btn" type="submit">COMPRAR</button></Link>
                         </div>
                         <div className="card">
                             <div className="hover-animation-altair">
                             </div>
                             <a>Altair</a>
                             <p>32€</p>
+                            <Link to="/loja"><button className="buy-btn" type="submit">COMPRAR</button></Link>
                         </div>
                     </section>
                 </div>

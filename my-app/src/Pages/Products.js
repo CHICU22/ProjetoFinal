@@ -33,6 +33,7 @@ export default function Home() {
                                         return <div className={pattern}></div>
                                     })}
                                 </div>
+                                <Link to="/checkout"><button className="buy-btn" type="submit">COMPRAR</button></Link>
                             </li>
                         })}
                         {/* <li>

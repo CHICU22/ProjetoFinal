@@ -112,11 +112,26 @@ main{
 .card>a{
   margin-top: 8px;
   font-weight: 900;
+  text-decoration: none;
 }
 
-.card>a:hover{
+.buy-btn{
+  font-family: var(--text-font);
+  font-size: 18px;
+  color: white;
+  width: 8.5vmax;
+  height: 2vmax;
+  border: none;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.buy-btn:hover{ 
   cursor: pointer;
-  text-decoration: underline;
+  border: solid;
+  border-color: black;
+  color: black;
+  background-color: white;
 }
 
 .hover-animation-lapki{
@@ -523,4 +538,56 @@ ul{
   background-image: url(../src/img/padroes/Sweet\ Peach.png);
   width: 36px;
   height: 36px;
+}
+
+/*---------CHECKOUT PAGE-----------*/ 
+.checkout-container{
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.small-img-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.different-img-1{
+  background-image: url(../src/img/Retângulo\ 144.png);
+  background-size: cover;
+  width: 89px;
+  height: 94px;
+}
+
+.different-img-2{
+  background-image: url(../src/img/Retângulo\ 144.png);
+  background-size: cover;
+  width: 89px;
+  height: 94px;
+}
+
+.different-img-3{
+  background-image: url(../src/img/Retângulo\ 144.png);
+  background-size: cover;
+  width: 89px;
+  height: 94px;
+}
+
+.different-img-4{
+  background-image: url(../src/img/Retângulo\ 144.png);
+  background-size: cover;
+  width: 89px;
+  height: 94px;
+}
+
+.bikini-model{
+  background-image: url(../src/img/MASK-HADAR.png);
+  background-size: cover;
+  width: 444px;
+  height: 430px;
 }

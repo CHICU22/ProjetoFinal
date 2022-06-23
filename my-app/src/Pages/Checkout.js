@@ -19,6 +19,23 @@ export default function Home() {
                 <Link to="/checkout"><img className="cart-icon" src={cart_icon}></img></Link>
             </header>
             <main>
+                <section className="checkout-container">
+                    <div className="checkout-grid">
+                        <div className="small-img-container">
+                            <div className="different-img-1"></div>
+                            <div className="different-img-2"></div>
+                            <div className="different-img-3"></div>
+                            <div className="different-img-4"></div>
+                        </div>
+                        <div className="bikini-model-container">
+                            <div className="bikini-model"></div>
+                        </div>
+                        <div className="infos-bikini">
+                            <h1>Hadar</h1>
+                            <p>30.00€</p>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer>
                 <Link to="/"><img className="logo-footer" src={logo}></img></Link>

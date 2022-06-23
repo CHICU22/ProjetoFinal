@@ -1,4 +1,7 @@
-export const data=[
+import React, { EventHandler } from "react";
+import { useShoppingCart } from "./Context"
+
+const products=[
     {
         id:"1",
         name:"Fierce",
@@ -58,8 +61,26 @@ export const data=[
         name:"Sweet Peach",
         price:"10.00€",
         img:"./src/img/padroes/Sweet\ Peach.PNG",
-    },
-];
+    }
+]
 
+export function Catalog(){
+    let shoppingCart = useShoppingCart();
+    return (
+        <div>
+            {products.map((product)=>
+                <div className="productCard">
+                    <p>{product.name} ({product.price})</p>
+                    {/* <input type="number" name="quantity" id={`${product.id}-quantity`} /> */}
+                    <button onClick={()=> shoppingCart.addProduct({
+                        id: product.id,
+                        name:product.name,
+                        price: product.price,
+                        quantity: 1
+                    })}>🛒</button>
+                </div>
+            )}
+        </div>
+    )
 
-export const patterns =["fierce-pattern-products", "nina-pattern-products", "fly-high-pattern-products", "meadow-pattern-products", "wild-sky-pattern-products", "mumu-pattern-products", "milkshake-pattern-products", "deep-ocean-pattern-products", "dark-sunset-pattern-products", "sweat-peach-pattern-products"]
+}
