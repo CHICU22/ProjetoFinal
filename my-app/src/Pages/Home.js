@@ -7,12 +7,15 @@ import facebook_icon from "../img/icons/icons8-facebook.png"
 import tiktok_icon from "../img/icons/icons8-tiktok.png"
 import altair_model from "../img/MASK-HADAR.png";
 import {Link} from "react-router-dom";
+import Header from "../Components/Header";
 import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
 
 export default function Home() {
     return (
         <>
-            <header>
+        <Header>
+        </Header>
+            {/* <header>
                 <Link to="/loja">Loja</Link>
                 <Link to="/sizeguide">Size Guide</Link>
                 <Link to="/returns">Returns</Link>
@@ -20,7 +23,7 @@ export default function Home() {
                 <Link to="/sobrenos">Sobre Nós</Link>
                 <img className="search-icon" src={search_icon} />
                 <Link to="/checkout"><img className="cart-icon" src={cart_icon}></img></Link>
-            </header>
+            </header> */}
             <main>
                 <div className="main-container">
                 <Link to="/loja"><button className="shopnow-btn" type="submit">COMPRAR AGORA</button></Link>

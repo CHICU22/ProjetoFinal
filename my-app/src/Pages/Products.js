@@ -1,5 +1,5 @@
-import React from "react";
-import {data, patterns} from "../Components/Products-Comp";
+import React, { useState, useEffect } from "react";
+import {data} from "../Components/Products-Comp";
 import logo from "../img/logo-sem-fundo.png";
 import search_icon from "../img/icons/icons8-search.svg";
 import container_bikini from "../img/Retângulo 116.png";
@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 import cart_icon from "../img/icons/icons8-shopping-bag-64.png"
 
 export default function Home() {
+
+    const [SelectedPatternId, setSelectedPatternId] = useState( 0 )
+
+     useEffect(()=>{console.log(SelectedPatternId)},[SelectedPatternId])
+
     return (
         <>
             <header>
@@ -19,20 +24,20 @@ export default function Home() {
                 <img className="cart-icon" src={cart_icon}></img>
             </header>
             <main>
-                <h1 className="products-title">Escolha o seu modelo</h1>
-                <div className="products-container">
-                    <ul>
-                        {data.map((element) => {
-                            
-                            return <li>
-                                <img className="biki-img-container" src={container_bikini}></img>
-                                <h3>{element.name}</h3>
-                                <p>{element.price}</p>
-                                <div className="choose-pattern">
-                                    {patterns.map((pattern) =>{
-                                        return <div className={pattern}></div>
+                <h1 className="products-title">Padrões</h1>
+                <div className="choose-pattern">
+                                    {data.patterns.map((pattern) =>{
+                                        return <div className={pattern.className} onClick={()=>{setSelectedPatternId(pattern.id)}}></div>
                                     })}
                                 </div>
+                <div className="products-container">
+                    <ul>
+                        {data.products.map((product) => {
+                            
+                            return <li>
+                                <img className="biki-img-container" src={`../src/img/products-imgs/${product.id}_${SelectedPatternId}.jpeg`}></img>
+                                <h3>{product.name}</h3>
+                                <p>{product.price}</p>
                                 <Link to="/checkout"><button className="buy-btn" type="submit">COMPRAR</button></Link>
                             </li>
                         })}

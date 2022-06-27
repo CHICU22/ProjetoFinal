@@ -144,6 +144,7 @@ main{
 .hover-animation-lapki:hover{
   background-image: url(../src/img/LAPKI-MODEL2.png);
   cursor: pointer;
+  transition: all linear 0.4s
 }
 
 .hover-animation-antares{
@@ -156,6 +157,7 @@ main{
 .hover-animation-antares:hover{
   background-image: url(../src/img/ANTARES-MODEL2.png);
   cursor: pointer;
+  transition: all linear 0.4s
 }
 
 .hover-animation-altair{
@@ -168,6 +170,7 @@ main{
 .hover-animation-altair:hover{
   background-image: url(../src/img/ALTAIR-MODEL2.png);
   cursor: pointer;
+  transition: all linear 0.4s
 }
 
 .bikini-name{
@@ -379,7 +382,7 @@ footer{
   display: grid;
   grid-template-columns: 0fr 0fr;
   margin-top: 60px;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -453,13 +456,18 @@ ul{
 
 .products-title{
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-family: var(--title-font);
-  text-align: center;
+  text-align: left;
+  padding-left: 25%;
 }
 
 .choose-pattern{
   display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding-left: 25%;
 }
 
 .fierce-pattern-products{
@@ -468,73 +476,91 @@ ul{
   height: 36px;
 }
 
+.fierce-pattern-products:hover{
+  cursor: pointer;
+}
+
 .nina-pattern-products{
-  position: absolute;
-  right: 72%;
   background-image: url(../src/img/padroes/Nina.png);
   width: 36px;
   height: 36px;
 }
 
+.nina-pattern-products:hover{
+  cursor: pointer;
+}
+
 .fly-high-pattern-products{
-  position: absolute;
-  right: 71%;
   background-image: url(../src/img/padroes/Fly\ High.png);
   width: 36px;
   height: 36px;
 }
 
+.fly-high-pattern-products:hover{
+  cursor : pointer;
+}
+
 .meadow-pattern-products{
-  position: absolute;
-  right: 70%;
   background-image: url(../src/img/padroes/Meadow.png);
   width: 36px;
   height: 36px;
 }
 
+.meadow-pattern-products:hover{
+  cursor: pointer;
+}
+
 .wild-sky-pattern-products{
-  position: absolute;
-  right: 69%;
   background-image: url(../src/img/padroes/Wild\ Sky.png);
   width: 36px;
   height: 36px;
 }
 
+.wild-sky-pattern-products:hover{
+  cursor: pointer;
+}
+
 .mumu-pattern-products{
-  position: absolute;
-  right: 68%;
   background-image: url(../src/img/padroes/Mumu.png);
   width: 36px;
   height: 36px;
 }
 
+.mumu-pattern-products:hover{
+  cursor: pointer;
+}
+
 .milkshake-pattern-products{
-  position: absolute;
-  right: 67%;
   background-image: url(../src/img/padroes/Milkshake.png);
   width: 36px;
   height: 36px;
 }
 
+.milkshake-pattern-products:hover{
+  cursor: pointer;
+}
+
 .deep-ocean-pattern-products{
-  position: absolute;
-  right: 66%;
   background-image: url(../src/img/padroes/Deep\ Ocean.png);
   width: 36px;
   height: 36px;
 }
 
+.deep-ocean-pattern-products:hover{
+  cursor: pointer;
+}
+
 .dark-sunset-pattern-products{
-  position: absolute;
-  right: 65%;
   background-image: url(../src/img/padroes/Dark\ Sunset.png);
   width: 36px;
   height: 36px;
 }
 
+.dark-sunset-pattern-products:hover{
+  cursor: pointer;
+}
+
 .sweat-peach-pattern-products{
-  position: absolute;
-  right: 64%;
   background-image: url(../src/img/padroes/Sweet\ Peach.png);
   width: 36px;
   height: 36px;
