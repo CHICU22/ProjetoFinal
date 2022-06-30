@@ -1,29 +1,17 @@
 import React from "react";
 import background from "../img/Background_Home.png";
 import logo from "../img/logo-sem-fundo.png";
-import search_icon from "../img/icons/icons8-search.svg";
-import insta_icon from "../img/icons/icons8-instagram.png"
-import facebook_icon from "../img/icons/icons8-facebook.png"
-import tiktok_icon from "../img/icons/icons8-tiktok.png"
+
 import altair_model from "../img/MASK-HADAR.png";
 import {Link} from "react-router-dom";
 import Header from "../Components/Header";
-import cart_icon from "../img/icons/icons8-shopping-bag-64.png";
+import Footer from "../Components/Footer";
 
 export default function Home() {
     return (
         <>
         <Header>
         </Header>
-            {/* <header>
-                <Link to="/loja">Loja</Link>
-                <Link to="/sizeguide">Size Guide</Link>
-                <Link to="/returns">Returns</Link>
-                <Link to="/"><img className="logo" src={logo} href="home.js"></img></Link>
-                <Link to="/sobrenos">Sobre Nós</Link>
-                <img className="search-icon" src={search_icon} />
-                <Link to="/checkout"><img className="cart-icon" src={cart_icon}></img></Link>
-            </header> */}
             <main>
                 <div className="main-container">
                 <Link to="/loja"><button className="shopnow-btn" type="submit">COMPRAR AGORA</button></Link>
@@ -113,22 +101,8 @@ export default function Home() {
                     </section>
                 </div>
             </main>
-            <footer>
-                <section className="footer-container">    
-                        <Link to="/"><img className="logo-footer" src={logo}></img></Link>
-                        <div className="pages-ref">
-                            <Link to="/sizeguide">Size Guide</Link>
-                            <Link to="/returns">Returns</Link>
-                            <Link to="/sobrenos">Sobre Nós</Link>
-                        <div className="socials-container">
-                            <img className="insta-icon" src={insta_icon}></img>
-                            <img className="facebook-icon" src={facebook_icon}></img>
-                            <img className="tiktok-icon" src={tiktok_icon}></img>
-                            <p>© 2021 Vieru Swimwear</p>
-                        </div>
-                        </div>  
-                </section>
-            </footer>
+            <Footer>
+            </Footer>
         </>
     );
 }

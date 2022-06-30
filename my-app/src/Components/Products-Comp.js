@@ -65,14 +65,55 @@ export const data={
     products:[
         {
             id:"1",
-            name:"bikini xpto",
+            name:"Fierce",
             price:"10.00€",
         },
         {
             id:"2",
-            name:"calcoes",
+            name:"Nina",
             price:"12.00€",
         },
+        {
+            id:"3",
+            name:"Fly High",
+            price:"12.00€",
+        },
+        {
+            id:"4",
+            name:"Meadow",
+            price:"12.00€",
+        },
+        {
+            id:"5",
+            name:"Wild Sky",
+            price:"12.00€",
+        },
+        {
+            id:"6",
+            name:"Mumu",
+            price:"12.00€",
+        },
+        {
+            id:"7",
+            name:"Milkshake",
+            price:"12.00€",
+        },
+        {
+            id:"8",
+            name:"Deep Ocean",
+            price:"12.00€",
+        },
+        {
+            id:"9",
+            name:"Dark Sunset",
+            price:"12.00€",
+        },        
+        {
+            id:"10",
+            name:"Sweet Peach",
+            price:"12.00€",
+        },
+        
     ],
 
 };

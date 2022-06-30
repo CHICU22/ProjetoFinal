@@ -474,98 +474,141 @@ ul{
   background-image: url(../src/img/padroes/Fierce.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .fierce-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .nina-pattern-products{
   background-image: url(../src/img/padroes/Nina.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .nina-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .fly-high-pattern-products{
   background-image: url(../src/img/padroes/Fly\ High.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .fly-high-pattern-products:hover{
-  cursor : pointer;
+  cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .meadow-pattern-products{
   background-image: url(../src/img/padroes/Meadow.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .meadow-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .wild-sky-pattern-products{
   background-image: url(../src/img/padroes/Wild\ Sky.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .wild-sky-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .mumu-pattern-products{
   background-image: url(../src/img/padroes/Mumu.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .mumu-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .milkshake-pattern-products{
   background-image: url(../src/img/padroes/Milkshake.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .milkshake-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .deep-ocean-pattern-products{
   background-image: url(../src/img/padroes/Deep\ Ocean.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .deep-ocean-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .dark-sunset-pattern-products{
   background-image: url(../src/img/padroes/Dark\ Sunset.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
 .dark-sunset-pattern-products:hover{
   cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
 }
 
 .sweat-peach-pattern-products{
   background-image: url(../src/img/padroes/Sweet\ Peach.png);
   width: 36px;
   height: 36px;
+  border-radius: 50%;
 }
 
+.sweat-peach-pattern-products:hover{
+  cursor: pointer;
+  border: solid;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+}
 /*---------CHECKOUT PAGE-----------*/ 
 .checkout-container{
   display: flex;
@@ -583,33 +626,33 @@ ul{
   gap: 20px;
 }
 
-.different-img-1{
-  background-image: url(../src/img/Retângulo\ 144.png);
+/* .different-img-1{
+  background-image: url(../src/img/Retângulo_144.png);
   background-size: cover;
   width: 89px;
   height: 94px;
 }
 
 .different-img-2{
-  background-image: url(../src/img/Retângulo\ 144.png);
+  background-image: url(../src/img/Retângulo_144.png);
   background-size: cover;
   width: 89px;
   height: 94px;
 }
 
 .different-img-3{
-  background-image: url(../src/img/Retângulo\ 144.png);
+  background-image: url(../src/img/Retângulo_144.png);
   background-size: cover;
   width: 89px;
   height: 94px;
 }
 
 .different-img-4{
-  background-image: url(../src/img/Retângulo\ 144.png);
+  background-image: url(../src/img/Retângulo_144.png);
   background-size: cover;
   width: 89px;
   height: 94px;
-}
+} */
 
 .bikini-model{
   background-image: url(../src/img/MASK-HADAR.png);
