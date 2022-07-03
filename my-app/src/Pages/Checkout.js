@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
-export default function Home() {
+export default function Checkout(props) {
+    const {cartItems, onAdd, onRemove} = props;
     return (
         <>
         <Header>
@@ -17,11 +18,19 @@ export default function Home() {
                             <div className="different-img-4"></div>
                         </div>
                         <div className="bikini-model-container">
-                            <div className="bikini-model"></div>
-                        </div>
-                        <div className="infos-bikini">
-                            <h1>Hadar</h1>
-                            <p>30.00€</p>
+                            {cartItems.length === 0 && <div> Carrinho vazio</div>}
+                            {cartItems.map((item) => (
+                                <div key={item.id} className="row">
+                                    <div className="col-2">{item.name}</div>
+                                    <div className="col-2">
+                                        <button onClick={()=>onAdd(item)} className="add">+</button>
+                                        <button onClick={()=>onRemove(item)} className="remove">-</button>
+                                    </div>
+                                    <div className="col-2 text-right">
+                                        {item.qty} x ${item.price.toFixed(2)}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>

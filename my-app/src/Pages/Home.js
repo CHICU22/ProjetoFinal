@@ -1,7 +1,4 @@
 import React from "react";
-import background from "../img/Background_Home.png";
-import logo from "../img/logo-sem-fundo.png";
-
 import altair_model from "../img/MASK-HADAR.png";
 import {Link} from "react-router-dom";
 import Header from "../Components/Header";

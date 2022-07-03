@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import {data} from "../Components/Products-Comp";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import product_img_1 from "../img/products-imgs/1_1.jpg";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Products(props) {
 
+    const {product, onAdd} = props;
     const [SelectedPatternId, setSelectedPatternId] = useState( 0 )
 
      useEffect(()=>{console.log(SelectedPatternId)},[SelectedPatternId])
@@ -23,13 +25,13 @@ export default function Home() {
                                 </div>
                 <div className="products-container">
                     <ul>
-                        {data.products.map((product) => {
+                        {data.products.map((product, index) => {
                             
                             return <li>
-                                <img className="biki-img-container" src={`../src/img/products-imgs/${product.id}_${SelectedPatternId}.jpeg`}></img>
+                                <img className="biki-img-container" src={`../src/img/products-imgs/${product.id}_${SelectedPatternId}.jpg`}></img>
                                 <h3>{product.name}</h3>
                                 <p>{product.price}</p>
-                                <Link to="/checkout"><button className="buy-btn" type="submit">COMPRAR</button></Link>
+                                <button onClick={() => onAdd(product)} className="buy-btn" type="submit">COMPRAR</button>
                             </li>
                         })}
                     </ul>

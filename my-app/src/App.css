@@ -301,6 +301,7 @@ footer{
   align-items: center;
   justify-content: center;
   background-color: #F9D0C1;
+  gap: 20px;
 }
 
 .footer-container{
