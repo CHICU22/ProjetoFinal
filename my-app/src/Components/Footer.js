@@ -15,13 +15,12 @@ export default function footer() {
                             <Link to="/sizeguide">Size Guide</Link>
                             <Link to="/returns">Returns</Link>
                             <Link to="/sobrenos">Sobre Nós</Link>
+                        </div>
                         <div className="socials-container">
-                            <img className="insta-icon" src={insta_icon}></img>
+                            <img className="insta-icon" src={insta_icon} href="https://www.instagram.com/"></img>
                             <img className="facebook-icon" src={facebook_icon}></img>
                             <img className="tiktok-icon" src={tiktok_icon}></img>
-                            <p>© 2021 Vieru Swimwear</p>
-                        </div>
-                        </div>  
+                        </div> 
                 </section>
             </footer>
         </>

@@ -6,11 +6,11 @@ import Returns from "./Pages/TrocasDevolucoes"
 import SobreNos from "./Pages/SobreNos"
 import Loja from "./Pages/Products";
 import Checkout from "./Pages/Checkout";
-// import data from "./Components/Products-Comp";
+import {data} from "./Components/Products-Comp";
 import {useState} from "react";
 
 function App() {
-  // const {products} = data;
+  const {products} = data;
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find(x => x.id === product.id);

@@ -54,6 +54,18 @@ header> a:hover{
   width: 1.5vw;
 }
 
+.cart-icon{
+  width: 1.5vw;
+  height: 2.9vh;
+  background-image: url(../src/img/icons/icons8-shopping-bag-64.png);
+  background-size: cover;
+  text-decoration: none;
+}
+
+.cart-icon:hover{
+  color: #5c5c5c;
+}
+
 main{
   display: flex;
   flex-direction: column;
@@ -301,7 +313,6 @@ footer{
   align-items: center;
   justify-content: center;
   background-color: #F9D0C1;
-  gap: 20px;
 }
 
 .footer-container{
@@ -321,6 +332,23 @@ footer{
 
 .socials-container{
   display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.insta-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.facebook-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.tiktok-icon{
+  width: 22px;
+  height: 22px;
 }
 
 .socials-container>p{
@@ -438,6 +466,12 @@ footer{
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
+}
+
+.biki-img-container{
+  background-image: url(../src/img/Retângulo\ 116.png);
+  width: 307px;
+  height: 399px;
 }
 
 ul{
